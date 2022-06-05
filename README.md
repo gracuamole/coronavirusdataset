@@ -65,6 +65,8 @@ coronavirus %>%
          yaxis = list(title = "Number of Cases"),
          xaxis = list(title = "Source: Johns Hopkins University Center for Systems Science and Engineering"))
 ```
+![newplot](https://user-images.githubusercontent.com/86179638/172038726-1a5cfe8b-bcf7-4758-bab1-5112e9a9f50f.png)
+
 ```{r}
 library(ggplot2)
 
@@ -84,6 +86,8 @@ plot_2
 
 gridExtra::grid.arrange(plot_1, plot_2, nrow = 2, ncol = 1)
 ```
+![00000a](https://user-images.githubusercontent.com/86179638/172038760-ed440836-919a-4ade-8337-5612f986ddb6.png)
+
 ```{r}
 conf_df <- coronavirus %>% 
   filter(type == "confirmed") %>%
@@ -102,6 +106,8 @@ conf_df <- coronavirus %>%
           name = "Confirmed",
           textinfo="label+value+percent parent")
 ```
+![newplot (1)](https://user-images.githubusercontent.com/86179638/172038773-0fdc0001-dd5b-4131-9af0-b26b50f1425b.png)
+
 ```{r}
 covid19_vaccine %>% 
   filter(date == max(date),
@@ -123,4 +129,7 @@ covid19_vaccine %>%
                       ticksuffix = "%"))
 
 ```
+![newplot (2)](https://user-images.githubusercontent.com/86179638/172038784-e077b442-989e-4867-aee7-fd4afd4ab03b.png)
+
+
 
